@@ -13,7 +13,18 @@ import (
 func main() {
 	fmt.Println(quote.Hello())
 
-	// - Function 을 대문자로 작성하는 경우 export 할 수 있는 함수가 된다.
+	// 1. Function 을 대문자로 작성하는 경우 export 할 수 있는 함수가 된다.
 	something.SayHello()
 	// something.sayBye()
+
+	// 2. 변수와 상수
+	// 2.1 상수 - 변수명 옆에 타입을 지정해줄 수 있음
+	const name string = "kwan-ik"
+	fmt.Println(name)
+
+	// 2.2 변수 -
+	nameVar := "kwan-ik"
+	//  == var nameVar string = "kwan-ik"
+	nameVar = "gani"
+	fmt.Println(nameVar)
 }
